@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header id="header-nav">
+    <a href="#" class="navbar-brand">
+      <img src="images/logo.png" alt="Restaurant Logo" id="logo-img">
+      <h1>Restaurant Name</h1>
+      <p>Kosher Cert: <span><img src="images/star-k-logo.png" alt="Star-K"></span></p>
+    </a>
+  </header>
+  <!-- End Header -->
+
+  <!-- Home Page -->
+  <section class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div id="menu-tile" class="tile">
+          <span>Menu</span>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div id="specials-tile" class="tile">
+          <a href="#" onclick="$dc.loadMenuItems('{{randomCategoryShortName}}');">
+            <span>Specials</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div id="map-tile" class="tile">
+          <span>Map</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Home Page -->
+
+  <!-- Footer -->
+  <footer class="panel-footer">
+    <div class="row">
+      <section>
+        <h3>Contact Us</h3>
+        <p>123 Restaurant St.</p>
+        <p>Phone: (123) 456-7890</p>
+      </section>
+      <section>
+        <h3>Hours</h3>
+        <p id="hours"><span>Mon-Fri: 11am - 10pm</span><br><span>Sat-Sun: 12pm - 11pm</span></p>
+      </section>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+</body>
+</html>
